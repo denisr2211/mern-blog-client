@@ -19,11 +19,11 @@ const AddPostPage = () => {
 
     useEffect(() => {
         if (status) {
-            toast(status);
-            dispatch(addedPost());
-            if (isAuth) navigate('/posts');
+            toast(status)
+            dispatch(addedPost())
+            if (isAuth) navigate('/posts')
         }
-    }, [status, isAuth, navigate, dispatch]);
+    }, [status, isAuth, navigate, dispatch])
 
     const submitHandler = () => {
         try {
